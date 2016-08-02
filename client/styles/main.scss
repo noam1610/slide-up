@@ -1,5 +1,128 @@
 @import "../../node_modules/ionic-sdk/scss/ionic.scss";
 @import "../../node_modules/font-awesome/scss/font-awesome.scss";
-  
+.bas {
+    position: absolute;
+    bottom: 0;
+}
 
+.box-one {}
 
+.box-one.ng-hide-add {
+    -webkit-animation: 1s hide;
+    animation: 1s hide;
+}
+
+@keyframes hide {
+    from {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+}
+
+@-webkit-keyframes hide {
+    from {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+}
+
+.box-one.ng-hide-remove {
+    -webkit-animation: 1s show;
+    animation: 1s show;
+}
+
+@-webkit-keyframes show {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.show {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+// @keyframes show {
+//     0% {
+//         opacity: 0;
+//         transform: scale(0.5);
+//     }
+//     70% {
+//         transform: scale(1.02);
+//     }
+//     100% {
+//         opacity: 1;
+//         transform: scale(1);
+//     }
+// }
+// @-webkit-keyframes show {
+//     0% {
+//         opacity: 0;
+//         transform: scale(0.5);
+//     }
+//     70% {
+//         transform: scale(1.02);
+//     }
+//     100% {
+//         opacity: 1;
+//         transform: scale(1);
+//     }
+// }
+// @keyframes hide {
+//     0% {
+//         opacity: 1;
+//         transform: scale(1);
+//     }
+//     30% {
+//         transform: scale(1.02);
+//     }
+//     100% {
+//         opacity: 0;
+//         transform: scale(0.5);
+//     }
+// }
+// @-webkit-keyframes hide {
+//     0% {
+//         opacity: 1;
+//         transform: scale(1);
+//     }
+//     30% {
+//         transform: scale(1.02);
+//     }
+//     100% {
+//         opacity: 0;
+//         transform: scale(0.5);
+//     }
+// }
