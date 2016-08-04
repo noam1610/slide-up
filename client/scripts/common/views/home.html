@@ -1,9 +1,11 @@
 <div id="noam" ng-animate=" 'animate' ">Home</div>
 
-<button ng-click="vm.boolean = !vm.boolean"> Button</button>
+<button ng-click="vm.boolean = !vm.boolean" class="button"> Button</button>
 
 <div class="bas" style="width: 100%; margin: auto ;">
-    <div class="box-one  list" ng-show="vm.boolean" >
+
+    <div class="box-one button" ng-click="vm.boolean = false">CLOSE</div>
+    <div class="box-one  list" ng-show="vm.boolean">
 
         <a class="item item-avatar" href="#">
             <img src="venkman.jpg">
