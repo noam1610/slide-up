@@ -1,79 +1,122 @@
 @import "../../node_modules/ionic-sdk/scss/ionic.scss";
 @import "../../node_modules/font-awesome/scss/font-awesome.scss";
+// @import "../../node_modules/animate.scss/animate.min.css";
+// .animated {
+//   -webkit-animation-duration: 1s;
+//   animation-duration: 1s;
+//   -webkit-animation-fill-mode: both;
+//   animation-fill-mode: both;
+// }
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+@keyframes fadeOutDown {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+}
+
+.fadeOutDown {
+    animation-name: fadeOutDown;
+}
+
+.ng-show, .ng-hide {
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+}
+
+.ng-show {
+    -webkit-animation-name: fadeInUp;
+}
+
+.ng-hide {
+    -webkit-animation-name: fadeOutDown;
+}
+
 .bas {
     position: absolute;
     bottom: 0;
 }
 
-.box-one {}
 
-.box-one.ng-hide-add {
-    -webkit-animation: 1s hide;
-    animation: 1s hide;
-}
-
-@keyframes hide {
-    from {
-        opacity: 1;
-        -webkit-transform: none;
-        transform: none;
-    }
-    to {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
-    }
-}
-
-@-webkit-keyframes hide {
-    from {
-        opacity: 1;
-        -webkit-transform: none;
-        transform: none;
-    }
-    to {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
-    }
-}
-
-.box-one.ng-hide-remove {
-    -webkit-animation: 1s show;
-    animation: 1s show;
-}
-
-@-webkit-keyframes show {
-    from {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
-    }
-    to {
-        opacity: 1;
-        -webkit-transform: none;
-        transform: none;
-    }
-}
-
-@keyframes show {
-    from {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
-    }
-    to {
-        opacity: 1;
-        -webkit-transform: none;
-        transform: none;
-    }
-}
-
-.show {
-    -webkit-animation-name: fadeInUp;
-    animation-name: fadeInUp;
-}
-
+// .box-one {}
+// .box-one.ng-hide-add {
+//     -webkit-animation: 1s hide;
+//     animation: 1s hide;
+// }
+// @keyframes hide {
+//     from {
+//         opacity: 1;
+//         -webkit-transform: none;
+//         transform: none;
+//     }
+//     to {
+//         opacity: 0;
+//         -webkit-transform: translate3d(0, 100%, 0);
+//         transform: translate3d(0, 100%, 0);
+//     }
+// }
+// @-webkit-keyframes hide {
+//     from {
+//         opacity: 1;
+//         -webkit-transform: none;
+//         transform: none;
+//     }
+//     to {
+//         opacity: 0;
+//         -webkit-transform: translate3d(0, 100%, 0);
+//         transform: translate3d(0, 100%, 0);
+//     }
+// }
+// .box-one.ng-hide-remove {
+//     -webkit-animation: 1s show;
+//     animation: 1s show;
+// }
+// @-webkit-keyframes show {
+//     from {
+//         opacity: 0;
+//         -webkit-transform: translate3d(0, 100%, 0);
+//         transform: translate3d(0, 100%, 0);
+//     }
+//     to {
+//         opacity: 1;
+//         -webkit-transform: none;
+//         transform: none;
+//     }
+// }
+// @keyframes show {
+//     from {
+//         opacity: 0;
+//         -webkit-transform: translate3d(0, 100%, 0);
+//         transform: translate3d(0, 100%, 0);
+//     }
+//     to {
+//         opacity: 1;
+//         -webkit-transform: none;
+//         transform: none;
+//     }
+// }
+// .show {
+//     -webkit-animation-name: fadeInUp;
+//     animation-name: fadeInUp;
+// }
+//------------------------------------------
 // @keyframes show {
 //     0% {
 //         opacity: 0;
